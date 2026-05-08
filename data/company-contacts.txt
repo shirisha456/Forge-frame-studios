@@ -1,0 +1,5 @@
+# Company contacts (format: key: value, one per line; keys: email, phone, address)
+email: hello@shirishagujja.me
+phone: +1 (555) 123-4567
+address: 123 Studio Lane, City, State 12345
+

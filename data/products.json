@@ -1,0 +1,192 @@
+[
+  {
+    "slug": "commercial-ads",
+    "title": "Commercial & Advertisement Videos",
+    "short_desc": "High-impact spots that drive sales and brand recall.",
+    "long_desc": "We produce broadcast-ready commercial and advertisement videos tailored to your brand and campaign goals. From 15-second social spots to 60-second TV commercials, our team handles concept, scripting, filming, and post-production to deliver content that converts.\n\nDeliverables include multiple cut lengths, platform-optimized versions, and optional subtitles. Typical turnaround is 2–4 weeks depending on scope.",
+    "images": [
+      {"file": "commercial-ads-1.jpg", "alt": "Professional commercial video production setup"},
+      {"file": "commercial-ads-2.jpg", "alt": "Advertisement filming on location"},
+      {"file": "commercial-ads-3.jpg", "alt": "Commercial post-production color grading"}
+    ],
+    "deliverables": ["Script & concept", "Multiple cut lengths (15s, 30s, 60s)", "Platform-optimized exports", "Optional subtitles/captions"],
+    "tiers": [
+      {"name": "Basic", "price": "From $1,500", "desc": "Single 30s spot, 1 revision"},
+      {"name": "Standard", "price": "From $3,500", "desc": "Up to 3 cut lengths, 2 revisions"},
+      {"name": "Premium", "price": "From $6,500", "desc": "Full campaign, multiple formats, 3 revisions"}
+    ],
+    "duration": "2–4 weeks",
+    "starting_price": "$1,500"
+  },
+  {
+    "slug": "corporate-videos",
+    "title": "Corporate Videos",
+    "short_desc": "Authentic stories that build trust and culture.",
+    "long_desc": "Corporate videos that communicate your company's mission, values, and differentiators. We create everything from CEO messages and culture pieces to recruitment and investor reels. Our cinematic approach ensures your brand looks polished and professional.\n\nWe handle scripting, interviews, b-roll, and full post-production. Turnaround is typically 3–5 weeks for a standard corporate piece.",
+    "images": [
+      {"file": "corporate-videos-1.jpg", "alt": "Corporate video interview setup"},
+      {"file": "corporate-videos-2.jpg", "alt": "Office b-roll for corporate film"},
+      {"file": "corporate-videos-3.jpg", "alt": "Corporate video editing suite"}
+    ],
+    "deliverables": ["Script & storyboard", "Interview filming", "B-roll & graphics", "Final master + web versions"],
+    "tiers": [
+      {"name": "Basic", "price": "From $2,000", "desc": "Single 2–3 min piece"},
+      {"name": "Standard", "price": "From $4,500", "desc": "Up to 5 min, multiple locations"},
+      {"name": "Premium", "price": "From $8,000", "desc": "Series or campaign, premium turnaround"}
+    ],
+    "duration": "3–5 weeks",
+    "starting_price": "$2,000"
+  },
+  {
+    "slug": "product-videos",
+    "title": "Product Marketing Videos",
+    "short_desc": "Showcase your product in its best light.",
+    "long_desc": "Product marketing videos that highlight features, benefits, and use cases. Whether for e-commerce, trade shows, or social, we combine clean product cinematography with motion graphics and sound design to make your product stand out.\n\nDeliverables include hero videos, unboxing-style content, and platform-specific cuts. Typical turnaround is 1–3 weeks.",
+    "images": [
+      {"file": "product-videos-1.jpg", "alt": "Product video lighting setup"},
+      {"file": "product-videos-2.jpg", "alt": "Product close-up cinematography"},
+      {"file": "product-videos-3.jpg", "alt": "Product video motion graphics"}
+    ],
+    "deliverables": ["Hero product video", "Social cuts (15s, 30s)", "Optional 360° or detail shots"],
+    "tiers": [
+      {"name": "Basic", "price": "From $800", "desc": "Single product, 1 min"},
+      {"name": "Standard", "price": "From $1,800", "desc": "Multiple angles, 2–3 cuts"},
+      {"name": "Premium", "price": "From $3,500", "desc": "Full suite, motion graphics, multiple products"}
+    ],
+    "duration": "1–3 weeks",
+    "starting_price": "$800"
+  },
+  {
+    "slug": "youtube-production",
+    "title": "YouTube Video Production",
+    "short_desc": "Full-service YouTube content that grows your channel.",
+    "long_desc": "End-to-end YouTube production: concept, scripting, filming, editing, thumbnails, and optimization. We create content that holds attention and aligns with platform best practices. Ideal for brands, creators, and educators looking to scale their channel professionally.\n\nDeliverables include edited videos, custom thumbnails, and optional SEO copy. Turnaround varies by format (e.g., 1–2 weeks per standard upload).",
+    "images": [
+      {"file": "youtube-production-1.jpg", "alt": "YouTube creator filming setup"},
+      {"file": "youtube-production-2.jpg", "alt": "YouTube video editing"},
+      {"file": "youtube-production-3.jpg", "alt": "YouTube thumbnail design"}
+    ],
+    "deliverables": ["Edited video (your length)", "Custom thumbnail(s)", "Optional title/description copy", "Platform-optimized export"],
+    "tiers": [
+      {"name": "Basic", "price": "From $500/video", "desc": "Single video, simple edit"},
+      {"name": "Standard", "price": "From $1,200/video", "desc": "Thumbnail, graphics, 2 revisions"},
+      {"name": "Premium", "price": "From $2,500/video", "desc": "Full creative, multiple formats, priority turnaround"}
+    ],
+    "duration": "1–2 weeks per video",
+    "starting_price": "$500/video"
+  },
+  {
+    "slug": "full-post-production",
+    "title": "Full Post-Production / Video Editing",
+    "short_desc": "Professional editing that shapes raw footage into stories.",
+    "long_desc": "We take your raw footage and deliver a polished final cut. Services include assembly edit, rough cut, fine cut, color grading, sound design, and mastering. Whether you've shot yourself or with another crew, our editors bring cinematic pacing and clarity to every frame.\n\nDeliverables include project files (on request), multiple resolutions, and optional deliverables list. Turnaround is typically 1–2 weeks for a standard project.",
+    "images": [
+      {"file": "full-post-production-1.jpg", "alt": "Video editing timeline"},
+      {"file": "full-post-production-2.jpg", "alt": "Post-production color suite"},
+      {"file": "full-post-production-3.jpg", "alt": "Sound design and mixing"}
+    ],
+    "deliverables": ["Rough cut", "Fine cut", "Color grade", "Sound mix", "Master + web exports"],
+    "tiers": [
+      {"name": "Basic", "price": "From $400", "desc": "Simple cut, basic color/sound"},
+      {"name": "Standard", "price": "From $1,000", "desc": "Full edit, color, sound, 2 revisions"},
+      {"name": "Premium", "price": "From $2,500", "desc": "Full post, multiple deliverables, 3 revisions"}
+    ],
+    "duration": "1–2 weeks",
+    "starting_price": "$400"
+  },
+  {
+    "slug": "color-grading",
+    "title": "Color Correction & Grading",
+    "short_desc": "Cinematic look and consistent tone across your project.",
+    "long_desc": "Professional color correction and grading to give your footage a cohesive, cinematic look. We match shots, fix exposure and white balance, and apply creative LUTs or custom grades. Ideal for narrative, commercial, and documentary projects that need a polished finish.\n\nDeliverables include graded masters and optional LUTs for your pipeline. Turnaround is typically 3–7 days depending on length.",
+    "images": [
+      {"file": "color-grading-1.jpg", "alt": "Color grading suite"},
+      {"file": "color-grading-2.jpg", "alt": "Before and after color grade"},
+      {"file": "color-grading-3.jpg", "alt": "Cinematic color lookup"}
+    ],
+    "deliverables": ["Corrected & graded master", "Optional LUT export", "Consistent look across all shots"],
+    "tiers": [
+      {"name": "Basic", "price": "From $250", "desc": "Correction + simple grade, short form"},
+      {"name": "Standard", "price": "From $600", "desc": "Full grade, up to 10 min"},
+      {"name": "Premium", "price": "From $1,200", "desc": "Feature-style grade, LUTs, extended length"}
+    ],
+    "duration": "3–7 days",
+    "starting_price": "$250"
+  },
+  {
+    "slug": "motion-graphics",
+    "title": "Motion Graphics & Logo Animation",
+    "short_desc": "Animated graphics and logos that capture attention.",
+    "long_desc": "Motion graphics and logo animations that elevate your brand. From stingers and lower thirds to full explainer segments, we create 2D and 3D motion that fits your visual identity. Logo animations are delivered in multiple formats for broadcast and web.\n\nDeliverables include source files (on request), multiple resolutions, and alpha-channel versions. Typical turnaround is 1–2 weeks.",
+    "images": [
+      {"file": "motion-graphics-1.jpg", "alt": "Motion graphics design"},
+      {"file": "motion-graphics-2.jpg", "alt": "Logo animation keyframes"},
+      {"file": "motion-graphics-3.jpg", "alt": "3D motion graphics render"}
+    ],
+    "deliverables": ["Animated logo (multiple formats)", "Lower thirds / stingers", "Alpha-channel exports", "Source files on request"],
+    "tiers": [
+      {"name": "Basic", "price": "From $300", "desc": "Simple logo animation"},
+      {"name": "Standard", "price": "From $750", "desc": "Logo + 2–3 graphic elements"},
+      {"name": "Premium", "price": "From $1,500", "desc": "Full package, 3D, custom style frames"}
+    ],
+    "duration": "1–2 weeks",
+    "starting_price": "$300"
+  },
+  {
+    "slug": "explainer-animation",
+    "title": "Explainer & Infographic Animations",
+    "short_desc": "Clear, engaging animations that explain complex ideas.",
+    "long_desc": "Explainer and infographic animations that break down complex topics into clear, engaging visuals. We handle script, voiceover direction, storyboard, and animation to produce videos that educate and persuade. Ideal for SaaS, healthcare, finance, and education.\n\nDeliverables include final video, optional multiple lengths, and subtitle files. Turnaround is typically 2–4 weeks.",
+    "images": [
+      {"file": "explainer-animation-1.jpg", "alt": "Explainer animation storyboard"},
+      {"file": "explainer-animation-2.jpg", "alt": "Infographic animation style"},
+      {"file": "explainer-animation-3.jpg", "alt": "Explainer video character design"}
+    ],
+    "deliverables": ["Script & storyboard", "Voiceover direction", "Animated video", "Subtitle file (optional)"],
+    "tiers": [
+      {"name": "Basic", "price": "From $1,200", "desc": "Up to 60s, simple style"},
+      {"name": "Standard", "price": "From $2,500", "desc": "Up to 2 min, custom assets"},
+      {"name": "Premium", "price": "From $5,000", "desc": "Long form, character animation, multiple cuts"}
+    ],
+    "duration": "2–4 weeks",
+    "starting_price": "$1,200"
+  },
+  {
+    "slug": "event-videography",
+    "title": "Event Videography (weddings, conferences)",
+    "short_desc": "Capture the moments that matter with cinematic coverage.",
+    "long_desc": "Full-service event videography for weddings, conferences, galas, and corporate events. We capture key moments, speeches, and atmosphere with a cinematic eye, then deliver a polished highlight film and optional full-length edit. Our approach is unobtrusive yet comprehensive.\n\nDeliverables include highlight reel (3–10 min), full edit (optional), and raw footage (optional). Turnaround is typically 4–8 weeks for weddings, 2–4 weeks for corporate events.",
+    "images": [
+      {"file": "event-videography-1.jpg", "alt": "Wedding videography"},
+      {"file": "event-videography-2.jpg", "alt": "Conference event filming"},
+      {"file": "event-videography-3.jpg", "alt": "Event highlight reel editing"}
+    ],
+    "deliverables": ["Highlight film", "Full-length edit (optional)", "Raw footage (optional)", "Same-day teaser (optional)"],
+    "tiers": [
+      {"name": "Basic", "price": "From $1,500", "desc": "Highlight only, 1 shooter"},
+      {"name": "Standard", "price": "From $3,000", "desc": "Highlight + full edit, 2 shooters"},
+      {"name": "Premium", "price": "From $6,000", "desc": "Full coverage, 2+ shooters, teaser, album"}
+    ],
+    "duration": "4–8 weeks (weddings), 2–4 weeks (corporate)",
+    "starting_price": "$1,500"
+  },
+  {
+    "slug": "drone-videography",
+    "title": "Drone & Aerial Videography",
+    "short_desc": "Stunning aerial perspectives for any project.",
+    "long_desc": "Licensed drone operations for real estate, commercials, events, and documentaries. We deliver smooth, cinematic aerial shots that add scale and drama to your project. All flights are conducted with proper permits and insurance.\n\nDeliverables include graded aerial clips, multiple resolutions, and optional integration into a full edit. Turnaround is typically 1–2 weeks for footage delivery.",
+    "images": [
+      {"file": "drone-videography-1.jpg", "alt": "Drone aerial landscape"},
+      {"file": "drone-videography-2.jpg", "alt": "Drone filming real estate"},
+      {"file": "drone-videography-3.jpg", "alt": "Aerial videography over city"}
+    ],
+    "deliverables": ["Graded aerial clips", "Multiple resolutions", "Optional full edit integration", "Licensed & insured"],
+    "tiers": [
+      {"name": "Basic", "price": "From $500", "desc": "Half-day shoot, 5–10 clips"},
+      {"name": "Standard", "price": "From $1,200", "desc": "Full-day, 15–20 clips, 2 locations"},
+      {"name": "Premium", "price": "From $2,500", "desc": "Multi-day, custom moves, full edit"}
+    ],
+    "duration": "1–2 weeks",
+    "starting_price": "$500"
+  }
+]

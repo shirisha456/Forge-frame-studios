@@ -1,0 +1,9 @@
+[
+  {"full_name":"Mary Smith","email":"mary.smith@example.com","role":"Client","company_name":"HaloVoyage"},
+  {"full_name":"John Wang","email":"john.wang@example.com","role":"Client","company_name":"HaloVoyage"},
+  {"full_name":"Alex Bington","email":"alex.bington@example.com","role":"Registered User","company_name":"HaloVoyage"},
+  {"full_name":"Sara Johnson","email":"sara.johnson@example.com","role":"Registered User","company_name":"HaloVoyage"},
+  {"full_name":"Michael Lee","email":"michael.lee@example.com","role":"Client","company_name":"HaloVoyage"},
+  {"full_name":"David Kim","email":"david.kim@example.com","role":"Registered User","company_name":"HaloVoyage"},
+  {"full_name":"Emily Davis","email":"emily.davis@example.com","role":"Client","company_name":"HaloVoyage"}
+]
