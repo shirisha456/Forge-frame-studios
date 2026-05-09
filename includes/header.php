@@ -5,6 +5,8 @@ if (!defined('FORGEFRAME')) {
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
+require_once __DIR__ . '/marketplace_partner_visit.php';
+marketplace_partner_report_visit_to_hub();
 $current_page = $current_page ?? 'home';
 $page_title = isset($page_title) ? $page_title . ' — ' . SITE_NAME : SITE_NAME;
 $meta_description = $meta_description ?? SITE_TAGLINE;

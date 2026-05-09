@@ -27,6 +27,9 @@ if (!$product) {
     exit;
 }
 
+require_once __DIR__ . '/includes/server_visit_counts.php';
+forge_aggregate_increment_slug($slug);
+
 $current_page = 'products';
 $page_title = $product['title'];
 $meta_description = $product['short_desc'];
