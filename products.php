@@ -1,13 +1,13 @@
 <?php
 /**
- * Forgeframe Studios — Services listing
+ * Forge Frame Studios — Services listing
  * Grid of 10 products; Recently Viewed & Top 5 Most Visited are rendered client-side via cookies.js
  */
 define('FORGEFRAME', true);
 require_once __DIR__ . '/includes/config.php';
 $current_page = 'products';
 $page_title = 'Our Services';
-$meta_description = 'Explore our video production services: commercial, corporate, product videos, YouTube, post-production, color grading, motion graphics, explainers, events, and drone.';
+$meta_description = 'Explore Forge Frame Studios services including Brand Anthem Film, Documentary Shorts, and full-service media production.';
 require_once __DIR__ . '/includes/header.php';
 
 $products_json = file_get_contents(PRODUCTS_FILE);

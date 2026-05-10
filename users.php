@@ -5,7 +5,7 @@ require_once __DIR__ . '/config.php';
 
 $current_page = 'users';
 $page_title = 'User Section';
-$meta_description = 'Manage users in Forgeframe Studios: create new user records and search existing contacts.';
+$meta_description = 'Manage users in Forge Frame Studios: create new user records and search existing contacts.';
 
 $pdo = forgeframe_get_pdo();
 $db_error = forgeframe_get_db_error();

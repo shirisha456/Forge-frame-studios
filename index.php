@@ -1,6 +1,6 @@
 <?php
 /**
- * Forgeframe Studios — Home
+ * Forge Frame Studios — Home
  * Hero, pitch, featured services, CTA.
  */
 define('FORGEFRAME', true);
@@ -40,7 +40,7 @@ $featured = array_slice($all_products, 0, 3);
 <!-- Pitch -->
 <section class="section pitch-section" aria-labelledby="pitch-heading">
     <div class="container">
-        <h2 id="pitch-heading" class="section-title">Why Forgeframe</h2>
+        <h2 id="pitch-heading" class="section-title">Why Forge Frame Studios</h2>
         <p class="pitch-lead text-center mx-auto">We combine cinematic craft with clear process. Every project gets a dedicated team, transparent timelines, and a final product built for your audience—whether that's a 15-second ad or a feature-length documentary.</p>
     </div>
 </section>

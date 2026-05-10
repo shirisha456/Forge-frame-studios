@@ -5,7 +5,7 @@ require_once __DIR__ . '/config.php';
 
 $current_page = 'users';
 $page_title = 'Search Users';
-$meta_description = 'Search Forgeframe Studios users by name, email, or phone.';
+$meta_description = 'Search Forge Frame Studios users by name, email, or phone.';
 
 $query = trim((string) ($_GET['q'] ?? ''));
 $results = [];
