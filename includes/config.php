@@ -99,6 +99,24 @@ function get_placeholder_image_url($seed, $width = 800, $height = 600) {
     return get_picsum_url(2, $width, $height);
 }
 
+/**
+ * Product metadata for client-side widgets (recent / top visited).
+ * Image URLs use get_image_src() so thumbnails match the Services grid (local file or Picsum fallback).
+ *
+ * @param array<int, array<string, mixed>> $products
+ * @return array<int, array{slug: string, title: string, image: string, alt: string}>
+ */
+function get_products_meta_for_json(array $products): array {
+    return array_map(static function ($p) {
+        return [
+            'slug' => $p['slug'],
+            'title' => $p['title'],
+            'image' => get_image_src($p['images'][0]['file']),
+            'alt' => $p['images'][0]['alt'],
+        ];
+    }, $products);
+}
+
 // Company contacts from data/company-contacts.txt.
 // Supports:
 // - key/value lines for studio details: "email: value", "phone: value", "address: value"

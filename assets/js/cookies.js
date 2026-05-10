@@ -12,6 +12,46 @@ var COOKIE_OPTS = 'path=/; max-age=31536000';
 var PLACEHOLDER_IMG = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBEQACEQADAPwA/9k=';
 
 /**
+ * Build final img src for widget thumbnails. PHP may pass absolute URLs (Picsum), root-relative
+ * paths from get_image_src, or legacy bare filenames.
+ */
+function resolveWidgetImageSrc(imageField, slug, assetsBase) {
+  var img = imageField;
+  if (!img) {
+    img = slug ? slug + '-1.jpg' : '';
+  }
+  if (!img) {
+    return PLACEHOLDER_IMG;
+  }
+  if (/^https?:\/\//i.test(img)) {
+    return img;
+  }
+  if (img.charAt(0) === '/') {
+    return img;
+  }
+  var base = assetsBase || '/assets/images';
+  if (base.slice(-1) !== '/') {
+    base += '/';
+  }
+  return base + img;
+}
+
+/**
+ * Avoid broken-image icon: network fallback, then tiny inline JPEG.
+ */
+function attachWidgetImageFallback(imgEl, slug) {
+  var seed = (slug || 'product').replace(/[^a-z0-9-]/gi, '').slice(0, 40) || 'forgeframe-product';
+  imgEl.addEventListener('error', function onFail() {
+    imgEl.removeEventListener('error', onFail);
+    imgEl.src = 'https://picsum.photos/seed/' + seed + '/160/120';
+    imgEl.addEventListener('error', function onFail2() {
+      imgEl.removeEventListener('error', onFail2);
+      imgEl.src = PLACEHOLDER_IMG;
+    });
+  });
+}
+
+/**
  * Get a cookie value by name
  * @param {string} name - Cookie name
  * @returns {string|null} Cookie value or null
@@ -124,7 +164,7 @@ function getVisitCounts() {
  */
 function renderRecentProducts(container, slugs, meta) {
   meta = meta || (typeof window.PRODUCTS_META !== 'undefined' ? window.PRODUCTS_META : []);
-  var basePath = (typeof window.ASSETS_IMAGES !== 'undefined' ? window.ASSETS_IMAGES : '/assets/images') + '/';
+  var assetsBase = typeof window.ASSETS_IMAGES !== 'undefined' ? window.ASSETS_IMAGES : '/assets/images';
   container.innerHTML = '';
   if (!slugs || slugs.length === 0) return;
   var metaBySlug = {};
@@ -136,16 +176,15 @@ function renderRecentProducts(container, slugs, meta) {
   slugs.forEach(function (slug) {
     var m = metaBySlug[slug];
     var title = m ? m.title : slug;
-    var img = m ? m.image : slug + '-1.jpg';
     var alt = m ? m.alt : title;
     var a = document.createElement('a');
     a.href = '/product.php?slug=' + encodeURIComponent(slug);
     a.setAttribute('title', title);
     var imgEl = document.createElement('img');
-    imgEl.src = basePath + img;
+    imgEl.src = resolveWidgetImageSrc(m ? m.image : null, slug, assetsBase);
     imgEl.alt = alt;
     imgEl.loading = 'lazy';
-    imgEl.onerror = function() { this.onerror = null; this.src = PLACEHOLDER_IMG; };
+    attachWidgetImageFallback(imgEl, slug);
     a.appendChild(imgEl);
     var span = document.createElement('span');
     span.textContent = title;
@@ -186,21 +225,20 @@ function renderTopVisited(container) {
   meta.forEach(function (p) {
     metaBySlug[p.slug] = p;
   });
-  var basePath = (typeof window.ASSETS_IMAGES !== 'undefined' ? window.ASSETS_IMAGES : '/assets/images') + '/';
+  var assetsBase = typeof window.ASSETS_IMAGES !== 'undefined' ? window.ASSETS_IMAGES : '/assets/images';
   container.innerHTML = '';
   top.forEach(function (item) {
     var m = metaBySlug[item.slug];
     var title = m ? m.title : item.slug;
-    var img = m ? m.image : item.slug + '-1.jpg';
     var alt = m ? m.alt : title;
     var a = document.createElement('a');
     a.href = '/product.php?slug=' + encodeURIComponent(item.slug);
     a.setAttribute('title', title + ' (' + item.count + ' visits)');
     var imgEl = document.createElement('img');
-    imgEl.src = basePath + img;
+    imgEl.src = resolveWidgetImageSrc(m ? m.image : null, item.slug, assetsBase);
     imgEl.alt = alt;
     imgEl.loading = 'lazy';
-    imgEl.onerror = function() { this.onerror = null; this.src = PLACEHOLDER_IMG; };
+    attachWidgetImageFallback(imgEl, item.slug);
     a.appendChild(imgEl);
     var span = document.createElement('span');
     span.textContent = title + ' (' + item.count + ')';

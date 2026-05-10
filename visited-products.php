@@ -20,14 +20,7 @@ require_once __DIR__ . '/includes/header.php';
 
 $products_json = file_get_contents(PRODUCTS_FILE);
 $products = json_decode($products_json, true);
-$products_meta_json = json_encode(array_map(function ($p) {
-    return [
-        'slug' => $p['slug'],
-        'title' => $p['title'],
-        'image' => $p['images'][0]['file'],
-        'alt' => $p['images'][0]['alt']
-    ];
-}, $products));
+$products_meta_json = json_encode(get_products_meta_for_json($products));
 ?>
 
 <section class="section page-hero-inner">
