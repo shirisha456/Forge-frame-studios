@@ -1,12 +1,12 @@
 <?php
 /**
- * Forgeframe Studios — News listing (3 sample posts)
+ * Forge Frame Studios — News listing (3 sample posts)
  */
 define('FORGEFRAME', true);
 require_once __DIR__ . '/includes/config.php';
 $current_page = 'news';
 $page_title = 'News';
-$meta_description = 'Latest news and updates from Forgeframe Studios.';
+$meta_description = 'Latest news and updates from Forge Frame Studios.';
 require_once __DIR__ . '/includes/header.php';
 
 $news_json = file_get_contents(NEWS_FILE);

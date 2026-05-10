@@ -1,6 +1,6 @@
 <?php
 /**
- * Forgeframe Studios — Site configuration
+ * Forge Frame Studios — Site configuration
  * Change brand, domain, and paths here for deployment.
  */
 
@@ -10,8 +10,8 @@ if (!defined('FORGEFRAME')) {
 }
 
 // Brand & domain (update for production: shirishagujja.me)
-define('SITE_NAME', 'Forgeframe Studios');
-define('SITE_TAGLINE', 'Crafting cinematic stories for brands and creators');
+define('SITE_NAME', 'Forge Frame Studios');
+define('SITE_TAGLINE', 'Media and design studio for cinematic brand films and documentary storytelling');
 define('SITE_DOMAIN', 'shirishagujja.me');
 define('SITE_URL', 'https://' . SITE_DOMAIN);
 define('BASE_PATH', dirname(__DIR__));
@@ -41,6 +41,8 @@ $picsum_id_map = [
     'news-reel-2025' => 13,
     'news-color-grading' => 14,
     'news-event-bts' => 15,
+    'brand-anthem-film' => [46, 47, 48],
+    'documentary-shorts' => [49, 50, 51],
     'commercial-ads' => [16, 17, 18],
     'corporate-videos' => [19, 20, 21],
     'product-videos' => [22, 23, 24],
@@ -95,13 +97,29 @@ function get_placeholder_image_url($seed, $width = 800, $height = 600) {
     return get_picsum_url(2, $width, $height);
 }
 
-// Company contacts: 5 people (name, role, email) from data/company-contacts.txt. Format per line: "Name | Role | Email"
+// Company contacts from data/company-contacts.txt.
+// Supports:
+// - key/value lines for studio details: "email: value", "phone: value", "address: value"
+// - team rows: "Name | Role | Email"
+$company_contact_details = [
+    'email' => 'hello@' . SITE_DOMAIN,
+    'phone' => '+1 (555) 123-4567',
+    'address' => '123 Studio Lane, City, State 12345',
+];
 $company_contacts_people = [];
 if (file_exists(COMPANY_CONTACTS_FILE) && is_readable(COMPANY_CONTACTS_FILE)) {
     $lines = file(COMPANY_CONTACTS_FILE, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     foreach ($lines as $line) {
         $line = trim($line);
         if ($line === '' || strpos($line, '#') === 0) continue;
+        if (strpos($line, ':') !== false && strpos($line, '|') === false) {
+            [$key, $value] = array_map('trim', explode(':', $line, 2));
+            $key = strtolower($key);
+            if (isset($company_contact_details[$key]) && $value !== '') {
+                $company_contact_details[$key] = $value;
+            }
+            continue;
+        }
         $parts = array_map('trim', explode('|', $line, 3));
         if (count($parts) >= 3) {
             $company_contacts_people[] = ['name' => $parts[0], 'role' => $parts[1], 'email' => $parts[2]];

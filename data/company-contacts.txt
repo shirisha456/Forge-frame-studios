@@ -1,5 +1,13 @@
-# Company contacts (format: key: value, one per line; keys: email, phone, address)
+# Company contacts for Forge Frame Studios
+# Studio info format: key: value (keys: email, phone, address)
 email: hello@shirishagujja.me
 phone: +1 (555) 123-4567
 address: 123 Studio Lane, City, State 12345
+
+# Team contacts format: Name | Role | Email
+Shirisha Gujja | Founder & Creative Director | hello@shirishagujja.me
+Anika Patel | Producer | anika@shirishagujja.me
+Noah Bennett | Director of Photography | noah@shirishagujja.me
+Maya Thomas | Lead Editor | maya@shirishagujja.me
+Ethan Ross | Motion Design Lead | ethan@shirishagujja.me
 

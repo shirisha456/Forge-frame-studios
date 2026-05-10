@@ -5,7 +5,7 @@ require_once __DIR__ . '/config.php';
 
 $current_page = 'users';
 $page_title = 'Create User';
-$meta_description = 'Create a new user record for Forgeframe Studios.';
+$meta_description = 'Create a new user record for Forge Frame Studios.';
 
 $form_data = [
     'first_name' => '',
@@ -91,7 +91,7 @@ require_once __DIR__ . '/includes/header.php';
             </ol>
         </nav>
         <h1 class="page-title">Create User</h1>
-        <p class="lead text-muted">Add a new user profile to the Forgeframe Studios contact database.</p>
+        <p class="lead text-muted">Add a new user profile to the Forge Frame Studios contact database.</p>
     </div>
 </section>
 

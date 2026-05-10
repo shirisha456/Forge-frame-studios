@@ -1,5 +1,43 @@
 [
   {
+    "slug": "brand-anthem-film",
+    "title": "Brand Anthem Film",
+    "short_desc": "Signature cinematic films that define your brand voice and vision.",
+    "long_desc": "Our Brand Anthem Film service creates a flagship story that captures who you are, what you stand for, and why audiences should care. These films are built for homepages, campaign launches, investor decks, and social rollouts where first impressions matter.\n\nWe lead the process end-to-end: brand discovery, creative development, scripting, production planning, filming, and cinematic post-production. The final result is a polished hero film plus platform-ready cutdowns so your message stays consistent across channels.",
+    "images": [
+      {"file": "brand-anthem-film-1.jpg", "alt": "Director framing a cinematic brand anthem scene"},
+      {"file": "brand-anthem-film-2.jpg", "alt": "Production crew filming a founder-led brand story"},
+      {"file": "brand-anthem-film-3.jpg", "alt": "Editor finishing a premium brand anthem film"}
+    ],
+    "deliverables": ["Discovery workshop and story direction", "Hero anthem film", "30s and 15s cutdowns", "Captions and web-optimized exports"],
+    "tiers": [
+      {"name": "Essential", "price": "From $3,000", "desc": "One-day shoot, 60-90 second anthem film"},
+      {"name": "Growth", "price": "From $6,500", "desc": "Two-day shoot with expanded storytelling and cutdowns"},
+      {"name": "Flagship", "price": "From $11,000", "desc": "Multi-location production with full campaign asset set"}
+    ],
+    "duration": "3-6 weeks",
+    "starting_price": "$3,000"
+  },
+  {
+    "slug": "documentary-shorts",
+    "title": "Documentary Shorts",
+    "short_desc": "Authentic short documentaries built around real people and real impact.",
+    "long_desc": "We produce Documentary Shorts that blend interview-led storytelling with cinematic b-roll to spotlight your mission, community, product journey, or social impact work. This format is ideal for nonprofits, founder stories, culture films, and customer narratives.\n\nOur team handles research, interview prep, field production, and narrative editing so each film feels honest and emotionally grounded. Final deliveries include a polished short documentary and optional social excerpts to extend reach.",
+    "images": [
+      {"file": "documentary-shorts-1.jpg", "alt": "Interview setup for a documentary short production"},
+      {"file": "documentary-shorts-2.jpg", "alt": "Field crew capturing documentary b-roll outdoors"},
+      {"file": "documentary-shorts-3.jpg", "alt": "Post-production timeline for documentary storytelling"}
+    ],
+    "deliverables": ["Story treatment and interview framework", "Cinematic documentary short", "Social highlight cut", "Subtitles and archival-ready master export"],
+    "tiers": [
+      {"name": "Essential", "price": "From $2,500", "desc": "Single interview and 2-3 minute short"},
+      {"name": "Standard", "price": "From $5,000", "desc": "Multi-interview piece with expanded location coverage"},
+      {"name": "Series", "price": "From $9,000", "desc": "Three-part documentary short series for campaigns"}
+    ],
+    "duration": "3-7 weeks",
+    "starting_price": "$2,500"
+  },
+  {
     "slug": "commercial-ads",
     "title": "Commercial & Advertisement Videos",
     "short_desc": "High-impact spots that drive sales and brand recall.",

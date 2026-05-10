@@ -1,20 +1,20 @@
 <?php
 /**
- * Forgeframe Studios — About
+ * Forge Frame Studios — About
  * Company story, mission, team.
  */
 define('FORGEFRAME', true);
 require_once __DIR__ . '/includes/config.php';
 $current_page = 'about';
 $page_title = 'About Us';
-$meta_description = 'Learn about Forgeframe Studios—our story, mission, and team. We craft cinematic stories for brands and creators.';
+$meta_description = 'Learn about Forge Frame Studios, a media and design company specializing in cinematic brand films and documentary storytelling.';
 require_once __DIR__ . '/includes/header.php';
 ?>
 
 <section class="section page-hero-inner">
     <div class="container">
-        <h1 class="page-title">About Forgeframe Studios</h1>
-        <p class="lead text-muted">We're a full-service production studio built for brands and creators who care about craft.</p>
+        <h1 class="page-title">About Forge Frame Studios</h1>
+        <p class="lead text-muted">We are a media and design studio delivering high-end video production for brands and creators.</p>
     </div>
 </section>
 
@@ -23,12 +23,12 @@ require_once __DIR__ . '/includes/header.php';
         <div class="row align-items-center g-5">
             <div class="col-lg-6">
                 <h2 id="story-heading" class="section-title">Our Story</h2>
-                <p>Forgeframe Studios started with a simple belief: every brand and creator has a story worth telling in a way that feels cinematic and authentic. We built our team around that idea—bringing together directors, editors, colorists, and motion designers who share a common language of light, movement, and sound.</p>
+                <p>Forge Frame Studios started with a simple belief: every brand and creator has a story worth telling in a way that feels cinematic and authentic. We built our team around that idea, bringing together directors, editors, colorists, and motion designers who share a common language of light, movement, and sound.</p>
                 <p>Today we work across commercials, corporate films, events, and long-form content. From the first concept to the final export, we focus on clarity, collaboration, and a finish that stands up on any screen.</p>
             </div>
             <div class="col-lg-6">
                 <div class="about-image-wrap">
-                    <img src="<?php echo htmlspecialchars(get_image_src('about-story.jpg')); ?>" alt="Forgeframe Studios team at work" loading="lazy" class="img-fluid rounded-3">
+                    <img src="<?php echo htmlspecialchars(get_image_src('about-story.jpg')); ?>" alt="Forge Frame Studios team at work" loading="lazy" class="img-fluid rounded-3">
                 </div>
             </div>
         </div>

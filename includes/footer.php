@@ -26,8 +26,8 @@
                 <div class="col-6 col-lg-2">
                     <h4 class="footer-heading">Services</h4>
                     <ul class="footer-links">
-                        <li><a href="/product.php?slug=commercial-ads">Commercial</a></li>
-                        <li><a href="/product.php?slug=corporate-videos">Corporate</a></li>
+                        <li><a href="/product.php?slug=brand-anthem-film">Brand Anthem Film</a></li>
+                        <li><a href="/product.php?slug=documentary-shorts">Documentary Shorts</a></li>
                         <li><a href="/product.php?slug=event-videography">Events</a></li>
                         <li><a href="/product.php?slug=drone-videography">Drone</a></li>
                     </ul>

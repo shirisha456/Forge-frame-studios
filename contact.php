@@ -1,6 +1,6 @@
 <?php
 /**
- * Forgeframe Studios — Contact form
+ * Forge Frame Studios — Contact form
  * Server-side validation; appends CSV to /data/contacts.txt
  * Format: YYYY-MM-DD HH:MM:SS,Name,Email,Phone,Message (escaped),IP
  */
@@ -52,7 +52,7 @@ $subject_prefill = isset($_GET['subject']) ? trim($_GET['subject']) : '';
 
 $current_page = 'contact';
 $page_title = 'Contacts';
-$meta_description = 'Get in touch with Forgeframe Studios for a quote or project inquiry.';
+$meta_description = 'Get in touch with Forge Frame Studios for a quote or project inquiry.';
 require_once __DIR__ . '/includes/header.php';
 ?>
 
@@ -66,7 +66,12 @@ require_once __DIR__ . '/includes/header.php';
 <section class="section bg-charcoal-soft" aria-labelledby="company-contacts-heading">
     <div class="container">
         <h2 id="company-contacts-heading" class="section-title text-center">Company contacts</h2>
-        <p class="text-center text-muted mb-4">Get in touch with our team.</p>
+        <p class="text-center text-muted mb-2">Get in touch with our team.</p>
+        <p class="text-center text-muted mb-4">
+            <a href="mailto:<?php echo htmlspecialchars($company_contact_details['email']); ?>" class="text-amber text-decoration-none"><?php echo htmlspecialchars($company_contact_details['email']); ?></a>
+            · <?php echo htmlspecialchars($company_contact_details['phone']); ?>
+            · <?php echo htmlspecialchars($company_contact_details['address']); ?>
+        </p>
         <div class="row g-4 justify-content-center">
             <?php foreach (array_slice($company_contacts_people, 0, 5) as $person): ?>
             <div class="col-md-6 col-lg-4">
