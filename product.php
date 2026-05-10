@@ -35,15 +35,8 @@ $page_title = $product['title'];
 $meta_description = $product['short_desc'];
 require_once __DIR__ . '/includes/header.php';
 
-// Embed product meta for cookie widgets (all products for titles/images on products.php)
-$products_meta_json = json_encode(array_map(function ($p) {
-    return [
-        'slug' => $p['slug'],
-        'title' => $p['title'],
-        'image' => $p['images'][0]['file'],
-        'alt' => $p['images'][0]['alt']
-    ];
-}, $products));
+// Embed product meta for cookie widgets (resolved image URLs match get_image_src / Services grid)
+$products_meta_json = json_encode(get_products_meta_for_json($products));
 ?>
 
 <section class="section product-hero">
