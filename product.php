@@ -1,6 +1,6 @@
 <?php
 /**
- * Forgeframe Studios — Single product/service page
+ * Forge Frame Studios — Single product/service page
  * product.php?slug=<slug> — cookie update runs on load via cookies.js
  */
 define('FORGEFRAME', true);

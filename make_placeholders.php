@@ -12,7 +12,7 @@ $dir = BASE_PATH . '/assets/images';
 if (!is_dir($dir)) {
     mkdir($dir, 0755, true);
 }
-$slugs = ['commercial-ads', 'corporate-videos', 'product-videos', 'youtube-production', 'full-post-production', 'color-grading', 'motion-graphics', 'explainer-animation', 'event-videography', 'drone-videography'];
+$slugs = ['brand-anthem-film', 'documentary-shorts', 'commercial-ads', 'corporate-videos', 'product-videos', 'youtube-production', 'full-post-production', 'color-grading', 'motion-graphics', 'explainer-animation', 'event-videography', 'drone-videography'];
 $names = ['hero-bg', 'about-story', 'news-reel-2025', 'news-color-grading', 'news-event-bts'];
 $created = 0;
 foreach ($slugs as $s) {

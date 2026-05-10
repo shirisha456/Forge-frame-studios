@@ -1,7 +1,7 @@
 <?php
 /**
  * Forge Frame Studios — Services listing
- * Grid of 10 products; Recently Viewed & Top 5 Most Visited are rendered client-side via cookies.js
+ * Grid of services from data/products.json; visit history widgets use cookies.js
  */
 define('FORGEFRAME', true);
 require_once __DIR__ . '/includes/config.php';

@@ -1,6 +1,6 @@
 <?php
 /**
- * Forgeframe Studios — Generate bcrypt hash for password
+ * Forge Frame Studios — Generate bcrypt hash for password
  * Run from CLI: php hash_password.php
  * Or in browser with ?password=YourNewPassword (for lab only; remove in production)
  * Then replace the password in /data/users.txt with admin:$2y$10$... (the hash output)

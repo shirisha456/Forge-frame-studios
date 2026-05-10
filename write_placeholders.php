@@ -11,6 +11,7 @@ if (!is_dir($dir)) {
 }
 $bytes = base64_decode($base64);
 $slugs = [
+    'brand-anthem-film', 'documentary-shorts',
     'commercial-ads', 'corporate-videos', 'product-videos', 'youtube-production',
     'full-post-production', 'color-grading', 'motion-graphics', 'explainer-animation',
     'event-videography', 'drone-videography'

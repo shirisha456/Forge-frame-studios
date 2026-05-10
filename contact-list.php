@@ -1,6 +1,6 @@
 <?php
 /**
- * Forgeframe Studios — Admin: Contact list
+ * Forge Frame Studios — Admin: Contact list
  * Reads /data/contacts.txt with fopen/fgets, parses CSV (str_getcsv), displays in table.
  * Protected: requires admin session.
  */

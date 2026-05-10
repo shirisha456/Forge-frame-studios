@@ -1,6 +1,6 @@
 <?php
 /**
- * Forgeframe Studios — Last 5 visited or Top 5 most visited (separate page)
+ * Forge Frame Studios — Last 5 visited or Top 5 most visited (separate page)
  * ?type=recent → Last 5 previously visited products
  * ?type=most  → Top 5 most visited products
  */

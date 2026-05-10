@@ -1,5 +1,5 @@
 /**
- * Forgeframe Studios — Custom styles
+ * Forge Frame Studios — Custom styles
  * Cinematic theme: dark charcoal #0f1724, accent amber #ff8a00, muted #9aa4b2
  * Cards: #111827 with subtle glass effect
  */
@@ -245,6 +245,8 @@ body {
 .service-col:nth-child(8) .service-card { animation-delay: 0.4s; }
 .service-col:nth-child(9) .service-card { animation-delay: 0.45s; }
 .service-col:nth-child(10) .service-card { animation-delay: 0.5s; }
+.service-col:nth-child(11) .service-card { animation-delay: 0.55s; }
+.service-col:nth-child(12) .service-card { animation-delay: 0.6s; }
 @keyframes fadeSlideUp {
   from {
     opacity: 0;

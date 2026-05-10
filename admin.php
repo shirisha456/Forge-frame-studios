@@ -1,6 +1,6 @@
 <?php
 /**
- * Forgeframe Studios — Secure admin area
+ * Forge Frame Studios — Secure admin area
  * Lists "current users" (display only), links to contact-list, export contacts CSV.
  */
 define('FORGEFRAME', true);

@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 /**
- * Marketplace feed — Forgeframe Studios (company_id 3).
+ * Marketplace feed — Forge Frame Studios (company_id 3).
  * Default: top 5 by server counts. ?catalog=all returns every offering in products.json.
  */
 

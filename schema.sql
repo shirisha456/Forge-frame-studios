@@ -1,4 +1,4 @@
--- Forgeframe Studios user module schema
+-- Forge Frame Studios user module schema
 -- Creates database and users table with required indexes.
 
 CREATE DATABASE IF NOT EXISTS `forgeframe_studios_site`
