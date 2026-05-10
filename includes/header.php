@@ -28,7 +28,7 @@ $meta_description = $meta_description ?? SITE_TAGLINE;
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <!-- Custom styles -->
-    <link href="<?php echo ASSETS_CSS; ?>?v=1" rel="stylesheet">
+    <link href="<?php echo ASSETS_CSS; ?>?v=2" rel="stylesheet">
     <!-- Schema.org Organization / LocalBusiness -->
     <script type="application/ld+json">
     {

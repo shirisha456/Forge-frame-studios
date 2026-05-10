@@ -70,6 +70,7 @@ body {
 }
 
 .navbar-dark .navbar-brand {
+  font-size: clamp(1.35rem, 2.8vw, 1.65rem);
   font-weight: 700;
   color: #fff !important;
   letter-spacing: 0.02em;
@@ -128,7 +129,7 @@ body {
   max-width: 640px;
 }
 .hero-title {
-  font-size: clamp(2.25rem, 5vw, 4rem);
+  font-size: clamp(1.95rem, 4.25vw, 3.35rem);
   font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1.15;
@@ -699,7 +700,7 @@ body {
   margin-top: auto;
 }
 .footer-brand {
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   font-weight: 700;
   color: #fff;
   margin-bottom: 0.5rem;
