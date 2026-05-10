@@ -33,8 +33,8 @@ define('ASSETS_JS_COOKIES', '/assets/js/cookies.js');
 define('ASSETS_IMAGES', '/assets/images');
 
 /**
- * Picsum Photos image IDs mapped to content (relevant imagery per slug).
- * Format: slug or filename base => id or [id1, id2, id3] for product images.
+ * Remote / fallback imagery per slug (used when no local file in assets/images).
+ * Each value: numeric Picsum id, OR HTTPS URL, OR URL template with {{W}} and {{H}} for dimensions.
  */
 $picsum_id_map = [
     'hero-bg' => 10,
@@ -46,7 +46,11 @@ $picsum_id_map = [
     'brand-anthem-film' => [46, 47, 48],
     'documentary-shorts' => [49, 50, 51],
     'commercial-ads' => [16, 17, 18],
-    'corporate-videos' => [19, 20, 21],
+    'corporate-videos' => [
+        'https://images.unsplash.com/photo-1574717024653-d61fd1cd4cf2?auto=format&fit=crop&w={{W}}&h={{H}}&q=80',
+        'https://images.unsplash.com/photo-1542744173-8e7e5348bb0b?auto=format&fit=crop&w={{W}}&h={{H}}&q=80',
+        'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w={{W}}&h={{H}}&q=80',
+    ],
     'product-videos' => [22, 23, 24],
     'youtube-production' => [25, 26, 27],
     'full-post-production' => [28, 29, 30],
@@ -58,7 +62,30 @@ $picsum_id_map = [
 ];
 
 /**
- * Return URL for an image. Uses local file if it exists; otherwise returns a relevant Picsum photo by ID (mapped per slug).
+ * Resolve a map entry to a final image URL (Picsum id, fixed URL, or {{W}}/{{H}} template).
+ *
+ * @param int|string $entry
+ */
+function resolve_image_map_entry($entry, $width, $height) {
+    if (is_string($entry)) {
+        if (strpos($entry, '{{W}}') !== false || strpos($entry, '{{H}}') !== false) {
+            return str_replace(['{{W}}', '{{H}}'], [(string)(int)$width, (string)(int)$height], $entry);
+        }
+        if (preg_match('#^https?://#i', $entry)) {
+            return $entry;
+        }
+        if (ctype_digit($entry)) {
+            return get_picsum_url((int)$entry, $width, $height);
+        }
+    }
+    if (is_int($entry) || (is_float($entry) && (int)$entry == $entry)) {
+        return get_picsum_url((int)$entry, $width, $height);
+    }
+    return get_picsum_url(1, $width, $height);
+}
+
+/**
+ * Return URL for an image. Uses local file if it exists; otherwise map entry (Picsum id or external URL).
  */
 function get_image_src($filename, $width = 800, $height = 600) {
     global $picsum_id_map;
@@ -72,12 +99,15 @@ function get_image_src($filename, $width = 800, $height = 600) {
         $slug = $m[1];
         $idx = (int)$m[2] - 1;
         if (isset($picsum_id_map[$slug]) && is_array($picsum_id_map[$slug]) && isset($picsum_id_map[$slug][$idx])) {
-            return get_picsum_url($picsum_id_map[$slug][$idx], $width, $height);
+            return resolve_image_map_entry($picsum_id_map[$slug][$idx], $width, $height);
         }
     }
     if (isset($picsum_id_map[$base])) {
         $id = $picsum_id_map[$base];
-        return get_picsum_url(is_array($id) ? $id[0] : $id, $width, $height);
+        if (is_array($id)) {
+            return resolve_image_map_entry($id[0], $width, $height);
+        }
+        return resolve_image_map_entry($id, $width, $height);
     }
     return get_picsum_url(1, $width, $height);
 }
@@ -94,7 +124,10 @@ function get_placeholder_image_url($seed, $width = 800, $height = 600) {
     $seed = preg_replace('/[^a-z0-9\-_]/i', '-', $seed);
     if (isset($picsum_id_map[$seed])) {
         $id = $picsum_id_map[$seed];
-        return get_picsum_url(is_array($id) ? $id[0] : $id, $width, $height);
+        if (is_array($id)) {
+            return resolve_image_map_entry($id[0], $width, $height);
+        }
+        return resolve_image_map_entry($id, $width, $height);
     }
     return get_picsum_url(2, $width, $height);
 }
