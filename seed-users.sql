@@ -1,4 +1,4 @@
--- Forgeframe Studios user module seed data
+-- Forge Frame Studios user module seed data
 USE `forgeframe_studios_site`;
 
 INSERT INTO `users` (`first_name`, `last_name`, `email`, `home_address`, `home_phone`, `cell_phone`) VALUES

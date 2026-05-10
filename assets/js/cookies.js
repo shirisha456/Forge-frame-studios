@@ -1,5 +1,5 @@
 /**
- * Forgeframe Studios — Cookie utilities
+ * Forge Frame Studios — Cookie utilities
  * recent_products: JSON array of slugs, most recent first, max 5
  * visit_counts: JSON object { slug: count, ... }
  * path=/; max-age=31536000 (1 year)

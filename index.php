@@ -25,7 +25,7 @@ $featured = array_slice($all_products, 0, 3);
     <div class="container hero-container">
         <div class="hero-content">
             <h1 class="hero-title"><?php echo htmlspecialchars(SITE_TAGLINE); ?></h1>
-            <p class="hero-subhead">We bring your brand stories to life with film-grade production—from concept to final cut.</p>
+            <p class="hero-subhead">We are a media and design studio for video production and creative storytelling—film-grade execution from concept to final cut.</p>
             <div class="hero-cta">
                 <a href="/products.php" class="btn btn-primary btn-cta-fill">View Services</a>
                 <a href="/contact.php" class="btn btn-outline-light btn-cta-outline">Contact Us</a>
@@ -41,7 +41,7 @@ $featured = array_slice($all_products, 0, 3);
 <section class="section pitch-section" aria-labelledby="pitch-heading">
     <div class="container">
         <h2 id="pitch-heading" class="section-title">Why Forge Frame Studios</h2>
-        <p class="pitch-lead text-center mx-auto">We combine cinematic craft with clear process. Every project gets a dedicated team, transparent timelines, and a final product built for your audience—whether that's a 15-second ad or a feature-length documentary.</p>
+        <p class="pitch-lead text-center mx-auto">We combine media, design, and cinematic craft with a clear process. Every project gets a dedicated team, transparent timelines, and deliverables built for your audience—from brand anthem films and documentary shorts to spots and social cuts.</p>
     </div>
 </section>
 

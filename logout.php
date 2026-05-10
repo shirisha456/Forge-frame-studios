@@ -1,6 +1,6 @@
 <?php
 /**
- * Forgeframe Studios — Logout: destroy session and redirect to login
+ * Forge Frame Studios — Logout: destroy session and redirect to login
  */
 session_start();
 $_SESSION = [];

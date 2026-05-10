@@ -28,7 +28,7 @@ $meta_description = $meta_description ?? SITE_TAGLINE;
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <!-- Custom styles -->
-    <link href="<?php echo ASSETS_CSS; ?>?v=2" rel="stylesheet">
+    <link href="<?php echo ASSETS_CSS; ?>?v=3" rel="stylesheet">
     <!-- Schema.org Organization / LocalBusiness -->
     <script type="application/ld+json">
     {
@@ -36,7 +36,7 @@ $meta_description = $meta_description ?? SITE_TAGLINE;
         "@type": "Organization",
         "name": "<?php echo htmlspecialchars(SITE_NAME); ?>",
         "url": "<?php echo SITE_URL; ?>",
-        "description": "<?php echo htmlspecialchars(SITE_TAGLINE); ?>",
+        "description": "<?php echo htmlspecialchars(SITE_ORGANIZATION_DESCRIPTION); ?>",
         "sameAs": []
     }
     </script>
@@ -45,7 +45,7 @@ $meta_description = $meta_description ?? SITE_TAGLINE;
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "<?php echo htmlspecialchars(SITE_NAME); ?>",
-        "description": "<?php echo htmlspecialchars(SITE_TAGLINE); ?>",
+        "description": "<?php echo htmlspecialchars(SITE_ORGANIZATION_DESCRIPTION); ?>",
         "url": "<?php echo SITE_URL; ?>"
     }
     </script>

@@ -12,6 +12,8 @@ if (!defined('FORGEFRAME')) {
 // Brand & domain (update for production: shirishagujja.me)
 define('SITE_NAME', 'Forge Frame Studios');
 define('SITE_TAGLINE', 'Crafting cinematic stories for brands and creators');
+/** Used in JSON-LD and anywhere a fuller “what we do” line helps (SEO / marketplace alignment). */
+define('SITE_ORGANIZATION_DESCRIPTION', 'Forge Frame Studios is a media and design studio for video production and creative work—including brand anthem films, documentary shorts, commercials, and motion design for brands and creators.');
 define('SITE_DOMAIN', 'shirishagujja.me');
 define('SITE_URL', 'https://' . SITE_DOMAIN);
 define('BASE_PATH', dirname(__DIR__));

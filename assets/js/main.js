@@ -1,5 +1,5 @@
 /**
- * Forgeframe Studios — Main JS
+ * Forge Frame Studios — Main JS
  * Nav scroll behavior, modal accessibility (focus trap), skip link, product gallery
  */
 

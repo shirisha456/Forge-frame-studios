@@ -1,6 +1,6 @@
 <?php
 /**
- * Forgeframe Studios — Admin login
+ * Forge Frame Studios — Admin login
  * Reads /data/users.txt: lines format username:password
  * If password starts with $2y$ use password_verify(); else plaintext compare (class lab).
  * Default: admin / Admin@123
