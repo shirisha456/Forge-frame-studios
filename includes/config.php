@@ -46,10 +46,11 @@ $picsum_id_map = [
     'brand-anthem-film' => [46, 47, 48],
     'documentary-shorts' => [49, 50, 51],
     'commercial-ads' => [16, 17, 18],
+    // Unsplash CDN paths verified HTTP 200 (some photo IDs were removed → 404 and broken <img>).
     'corporate-videos' => [
-        'https://images.unsplash.com/photo-1574717024653-d61fd1cd4cf2?auto=format&fit=crop&w={{W}}&h={{H}}&q=80',
-        'https://images.unsplash.com/photo-1542744173-8e7e5348bb0b?auto=format&fit=crop&w={{W}}&h={{H}}&q=80',
+        'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w={{W}}&h={{H}}&q=80',
         'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w={{W}}&h={{H}}&q=80',
+        'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w={{W}}&h={{H}}&q=80',
     ],
     'product-videos' => [22, 23, 24],
     'youtube-production' => [25, 26, 27],
