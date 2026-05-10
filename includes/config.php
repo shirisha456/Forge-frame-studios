@@ -11,7 +11,7 @@ if (!defined('FORGEFRAME')) {
 
 // Brand & domain (update for production: shirishagujja.me)
 define('SITE_NAME', 'Forge Frame Studios');
-define('SITE_TAGLINE', 'Media and design studio for cinematic brand films and documentary storytelling');
+define('SITE_TAGLINE', 'Crafting cinematic stories for brands and creators');
 define('SITE_DOMAIN', 'shirishagujja.me');
 define('SITE_URL', 'https://' . SITE_DOMAIN);
 define('BASE_PATH', dirname(__DIR__));
